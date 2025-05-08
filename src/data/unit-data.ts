@@ -72,7 +72,7 @@ export const programData: UnitData[] = [
         variant: 'green',
         hasGroup: true,
         groupNumber: 4,
-        groupLink: 'https://www.google.com/',
+        groupLink: 'https://fisiiagrupo4.wordpress.com/',
       },
       {
         weekNumber: 7,
