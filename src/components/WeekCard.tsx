@@ -68,7 +68,7 @@ export const WeekCard = ({
             rel="noopener noreferrer"
             className={`mt-4 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs transition-colors ${buttonVariants[variant]}`}
           >
-            Ver Página de {groupNumber || weekNumber}
+            Ver página del grupo {groupNumber || weekNumber}
             <ChevronRight className="h-3 w-3" />
           </a>
         )}
