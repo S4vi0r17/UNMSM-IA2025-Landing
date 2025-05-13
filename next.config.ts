@@ -1,9 +1,18 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   /* config options here */
   images: {
-    domains: ['eventosindustrial.unmsm.edu.pe', 'i.ibb.co'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'eventosindustrial.unmsm.edu.pe',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+      },
+    ],
   },
 };
 
