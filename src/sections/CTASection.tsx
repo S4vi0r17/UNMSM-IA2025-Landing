@@ -13,10 +13,10 @@ export const CTASection = () => {
         data-aos-delay="100"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold text-black">
+          <h2 className="text-4xl font-halant font-semibold text-black">
             Conoce a tu Grupo de Trabajo
           </h2>
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-gray-700 text-lg">
             Consulta la información de los grupos de trabajo, integrantes y
             proyectos asignados en el documento compartido. Allí encontrarás
             todos los detalles necesarios para coordinar con tu equipo.
@@ -26,7 +26,7 @@ export const CTASection = () => {
               href="https://docs.google.com/spreadsheets/d/1NzHW1RoytIM2Jzhz6YZdyVffpY3kcYYvDvgebaV7clM/edit?gid=0#gid=0"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-medium text-white hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 font-medium text-white hover:bg-gray-800 transition-colors"
             >
               Ver Grupos de Trabajo
               <ChevronRight className="h-4 w-4" />

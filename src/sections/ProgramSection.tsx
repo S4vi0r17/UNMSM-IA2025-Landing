@@ -17,13 +17,13 @@ export const ProgramSection = () => {
       className="container max-w-[1150px] mx-auto px-4 py-16 pt-24"
     >
       <div className="mx-auto max-w-3xl text-center" data-aos="fade-up">
-        <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
+        <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 font-medium">
           Cronograma
         </div>
-        <h2 className="mt-4 text-3xl font-bold">
+        <h2 className="mt-4 text-4xl font-halant font-semibold">
           Programa del Curso y Temas por Semana
         </h2>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-gray-600 text-lg">
           Selecciona una semana para ver el contenido completo y conocer los
           grupos de trabajo especializados.
         </p>

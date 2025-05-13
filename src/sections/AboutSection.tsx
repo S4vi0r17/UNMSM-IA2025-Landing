@@ -12,12 +12,12 @@ export const TopicCard: React.FC<TopicCardProps> = ({
   description,
 }) => {
   return (
-    <div className="rounded-lg border border-gray-200 bg-gray-50 p-6 hover:border-[#c1ff72] transition-colors">
+    <div className="rounded-lg border border-gray-200 bg-gray-50 p-6 hover:border-[#c1ff72] hover:translate-y-[-2px] hover:shadow-lg transition-all duration-200 ease-in-out">
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#c1ff72]/20 text-black">
         {number}
       </div>
-      <h3 className="text-lg font-medium">{title}</h3>
-      <p className="mt-2 text-sm text-gray-600">{description}</p>
+      <h3 className="text-xl font-medium">{title}</h3>
+      <p className="mt-2 text-base text-gray-600">{description}</p>
     </div>
   );
 };
@@ -56,11 +56,13 @@ export const AboutSection = () => {
       className="container max-w-[1200px] mx-auto px-4 py-16 pt-24"
     >
       <div className="mx-auto max-w-3xl text-center" data-aos="fade-up">
-        <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 text-sm font-medium">
+        <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 font-medium">
           Descripción
         </div>
-        <h2 className="mt-4 text-3xl font-bold">¿De qué trata este curso?</h2>
-        <p className="mt-4 text-gray-600">
+        <h2 className="mt-4 text-4xl font-halant font-semibold">
+          ¿De qué trata este curso?
+        </h2>
+        <p className="mt-4 text-gray-600 text-lg">
           A lo largo de 16 semanas, aprenderás desde los conceptos básicos de IA
           y agentes hasta técnicas avanzadas en Machine Learning, Deep Learning
           e IA Generativa.

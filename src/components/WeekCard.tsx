@@ -52,13 +52,13 @@ export const WeekCard = ({
       className={`rounded-lg border p-6 relative overflow-hidden ${variants[variant]}`}
     >
       <div
-        className={`absolute top-0 left-0 px-3 py-1 text-sm font-medium ${badgeVariants[variant]}`}
+        className={`absolute top-0 left-0 px-3 py-1 font-medium ${badgeVariants[variant]}`}
       >
         Semana {weekNumber}
       </div>
       <div className="mt-6">
-        <h4 className="font-bold">{title}</h4>
-        <p className={`mt-2 text-sm ${descriptionVariants[variant]}`}>
+        <h4 className="font-bold text-lg">{title}</h4>
+        <p className={`mt-2 ${descriptionVariants[variant]}`}>
           {description}
         </p>
         {hasGroup && (
@@ -66,7 +66,7 @@ export const WeekCard = ({
             href={groupLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`mt-4 inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs transition-colors ${buttonVariants[variant]}`}
+            className={`mt-4 inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm transition-colors ${buttonVariants[variant]}`}
           >
             Ver página del grupo {groupNumber || weekNumber}
             <ChevronRight className="h-3 w-3" />

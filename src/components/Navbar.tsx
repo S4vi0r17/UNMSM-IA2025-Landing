@@ -92,7 +92,7 @@ export const Navbar = () => {
           <Link
             href="#"
             onClick={(e) => scrollToSection(e, 'hero')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'hero'
                 ? 'bg-[#c1ff72]'
                 : 'hover:bg-[#c1ff72]/50'
@@ -103,7 +103,7 @@ export const Navbar = () => {
           <Link
             href="#sobre"
             onClick={(e) => scrollToSection(e, 'sobre')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'sobre'
                 ? 'bg-[#c1ff72]'
                 : 'hover:bg-[#c1ff72]/50'
@@ -114,7 +114,7 @@ export const Navbar = () => {
           <Link
             href="#programa"
             onClick={(e) => scrollToSection(e, 'programa')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'programa'
                 ? 'bg-[#c1ff72]'
                 : 'hover:bg-[#c1ff72]/50'
@@ -125,7 +125,7 @@ export const Navbar = () => {
           <Link
             href="#docente"
             onClick={(e) => scrollToSection(e, 'docente')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'docente'
                 ? 'bg-[#c1ff72]'
                 : 'hover:bg-[#c1ff72]/50'
@@ -136,7 +136,7 @@ export const Navbar = () => {
           {/* <Link
             href="#contacto"
             onClick={(e) => scrollToSection(e, 'contacto')}
-            className={`text-sm transition-colors px-3 py-1 rounded-full ${
+            className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'contacto'
                 ? 'bg-[#c1ff72]'
                 : 'hover:bg-[#c1ff72]/50'
@@ -146,8 +146,8 @@ export const Navbar = () => {
           </Link> */}
         </nav>
         <div className="flex items-center gap-2">
-          <div className="text-sm text-gray-600">Visitantes:</div>
-          <div className="rounded-full bg-[#c1ff72] px-4 py-2 text-sm font-medium">
+          <div className="text-gray-600">Visitantes:</div>
+          <div className="rounded-full bg-[#c1ff72] px-4 py-2 font-medium">
             {visitorCount.toLocaleString()}
           </div>
         </div>
