@@ -7,7 +7,7 @@ export const TeacherSection = () => {
     <section id="docente" className="bg-gray-50 py-16 pt-24" data-aos="fade-up">
       <div className="container max-w-[1150px] mx-auto px-4">
         <div className="mx-auto max-w-3xl text-center" data-aos="fade-up">
-          <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 font-medium">
+          <div className="inline-block rounded-full bg-primary-lime px-4 py-1 font-medium">
             Docente
           </div>
           <h2 className="mt-4 text-4xl font-halant font-semibold">
@@ -17,7 +17,7 @@ export const TeacherSection = () => {
 
         <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-16">
           <div
-            className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-[#c1ff72] bg-white flex items-center justify-center"
+            className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-primary-lime bg-white flex items-center justify-center"
             data-aos="zoom-in"
             data-aos-delay="100"
           >
@@ -40,19 +40,19 @@ export const TeacherSection = () => {
             </h3>
             <div className="mt-4 space-y-3 ml-5 text-lg">
               <div className="flex items-center justify-center md:justify-start gap-2">
-                <Mail className="h-5 w-5 text-[#c1ff72]" />
+                <Mail className="h-5 w-5 text-primarbg-primary-lime" />
                 <p className="text-gray-700 font-medium">
                   lguerrag1@unmsm.edu.pe
                 </p>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2">
-                <Calendar className="h-5 w-5 text-[#c1ff72]" />
+                <Calendar className="h-5 w-5 text-primarbg-primary-lime" />
                 <p className="text-gray-600">
                   Ciclo: <span className="font-semibold">7</span>
                 </p>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2">
-                <Book className="h-5 w-5 text-[#c1ff72]" />
+                <Book className="h-5 w-5 text-primarbg-primary-lime" />
                 <p className="text-gray-600">
                   Curso:{' '}
                   <span className="font-semibold">Inteligencia Artificial</span>
@@ -62,7 +62,7 @@ export const TeacherSection = () => {
             <div className="mt-8 flex justify-center md:justify-start">
               <Link
                 href="mailto:lguerrag1@unmsm.edu.pe"
-                className="inline-flex items-center gap-2 rounded-full bg-[#c1ff72] text-black px-5 py-2.5 font-medium shadow hover:bg-[#b0e85f] transition-colors"
+                className="inline-flex items-center gap-2 rounded-full bg-primary-lime text-black px-5 py-2.5 font-medium shadow hover:bg-primary-lime-dark transition-all hover:-translate-y-0.5"
               >
                 <Mail className="h-5 w-5" />
                 Contactar por correo

@@ -94,8 +94,8 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'hero')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'hero'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'bg-primary-lime'
+                : 'hover:bg-primary-lime/50'
             }`}
           >
             Inicio
@@ -105,8 +105,8 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'sobre')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'sobre'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'bg-primary-lime'
+                : 'hover:bg-primary-lime/50'
             }`}
           >
             Sobre el Curso
@@ -116,8 +116,8 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'programa')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'programa'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'bg-primary-lime'
+                : 'hover:bg-primary-lime/50'
             }`}
           >
             Programa
@@ -127,8 +127,8 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'docente')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'docente'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'bg-primary-lime'
+                : 'hover:bg-primary-lime/50'
             }`}
           >
             Docente
@@ -138,8 +138,8 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'contacto')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'contacto'
-                ? 'bg-[#c1ff72]'
-                : 'hover:bg-[#c1ff72]/50'
+                ? 'bg-primary-lime'
+                : 'hover:bg-primary-lime/50'
             }`}
           >
             Contacto
@@ -147,7 +147,7 @@ export const Navbar = () => {
         </nav>
         <div className="flex items-center gap-2">
           <div className="text-gray-600">Visitantes:</div>
-          <div className="rounded-full bg-[#c1ff72] px-4 py-2 font-medium">
+          <div className="rounded-full bg-primary-lime px-4 py-2 font-medium">
             {visitorCount.toLocaleString()}
           </div>
         </div>

@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import { Montserrat, Halant, Padauk } from 'next/font/google';
+import AOSProvider from '@/components/AOSProvider';
+import { ThemeProvider } from '@/components/theme-provider';
+
 import './globals.css';
-import AOSProvider from '../components/AOSProvider';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const montserrat = Montserrat({
   variable: '--font-montserrat',
@@ -72,11 +75,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="custom-scrollbar">
+    <html lang="en" className="custom-scrollbar" suppressHydrationWarning>
       <body
         className={`${montserrat.variable} ${halant.variable} ${padauk.variable} antialiased`}
       >
-        <AOSProvider>{children}</AOSProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <AOSProvider>
+            {children}
+            <ThemeToggle />
+          </AOSProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -12,8 +12,8 @@ export const TopicCard: React.FC<TopicCardProps> = ({
   description,
 }) => {
   return (
-    <div className="rounded-lg border border-gray-200 bg-gray-50 p-6 hover:border-[#c1ff72] hover:translate-y-[-2px] hover:shadow-lg transition-all duration-200 ease-in-out">
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-[#c1ff72]/20 text-black">
+    <div className="rounded-lg border border-gray-200 bg-gray-50 p-6 hover:border-primary-lime hover:translate-y-[-2px] hover:shadow-lg transition-all duration-200 ease-in-out">
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary-lime/20 text-black">
         {number}
       </div>
       <h3 className="text-xl font-medium">{title}</h3>
@@ -56,7 +56,7 @@ export const AboutSection = () => {
       className="container max-w-[1200px] mx-auto px-4 py-16 pt-24"
     >
       <div className="mx-auto max-w-3xl text-center" data-aos="fade-up">
-        <div className="inline-block rounded-full bg-[#c1ff72] px-4 py-1 font-medium">
+        <div className="inline-block rounded-full bg-primary-lime px-4 py-1 font-medium">
           Descripción
         </div>
         <h2 className="mt-4 text-4xl font-halant font-semibold">

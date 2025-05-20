@@ -22,13 +22,13 @@ export const WeekCard = ({
   const variants = {
     light: 'bg-gray-50 text-black border-gray-200',
     dark: 'bg-gray-800 text-white border-gray-200',
-    green: 'bg-[#d8ffaa] text-black border-gray-200',
+    green: 'bg-primary-lime-light text-black border-gray-200',
     white: 'bg-white text-black border-gray-200',
   };
 
   const badgeVariants = {
-    light: 'bg-[#c1ff72] text-black',
-    dark: 'bg-[#c1ff72] text-black',
+    light: 'bg-primary-lime text-black',
+    dark: 'bg-primary-lime text-black',
     green: 'bg-black text-white',
     white: 'bg-black text-white',
   };
@@ -58,15 +58,13 @@ export const WeekCard = ({
       </div>
       <div className="mt-6">
         <h4 className="font-bold text-lg">{title}</h4>
-        <p className={`mt-2 ${descriptionVariants[variant]}`}>
-          {description}
-        </p>
+        <p className={`mt-2 ${descriptionVariants[variant]}`}>{description}</p>
         {hasGroup && (
           <a
             href={groupLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`mt-4 inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm transition-colors ${buttonVariants[variant]}`}
+            className={`mt-4 inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm transition-all duration-200 ${buttonVariants[variant]} hover:-translate-y-0.5 shadow-md`}
           >
             Ver página del grupo {groupNumber || weekNumber}
             <ChevronRight className="h-3 w-3" />

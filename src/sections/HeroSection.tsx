@@ -10,12 +10,16 @@ export const HeroSection = () => {
     >
       <div className="flex flex-col justify-center space-y-6 text-center lg:text-left lg:pl-16 xl:pl-0">
         <h1
-          className="text-4xl sm:text-5xl font-montserrat font-bold leading-tight bg-gradient-to-r from-gray-600 via-[#83c53c] to-[#c1ff72] bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl font-montserrat font-bold leading-tight bg-gradient-to-r from-gray-500 via-[#83c53c] to-primary-lime bg-clip-text text-transparent"
           data-aos="fade-up"
         >
           Inteligencia Artificial
         </h1>
-        <p className="text-gray-600 text-lg" data-aos="fade-up" data-aos-delay="100">
+        <p
+          className="text-gray-600 text-lg"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           Descubre los fundamentos teóricos y prácticos que te prepararán para
           diseñar, implementar y evaluar soluciones inteligentes en distintos
           ámbitos.
@@ -23,7 +27,7 @@ export const HeroSection = () => {
         <div data-aos="fade-up" data-aos-delay="200">
           <Link
             href="#sobre"
-            className="inline-flex items-center gap-2 rounded-full bg-[#c1ff72] px-6 py-3 font-medium text-black hover:bg-[#c1ff72]/80 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-primary-lime px-6 py-3 font-medium text-black hover:bg-primary-lime/80 transition-colors"
           >
             Ver Información Completa
             <ChevronRight className="h-4 w-4" />
@@ -46,7 +50,7 @@ export const HeroSection = () => {
             className="rounded-lg"
           />
           <div
-            className="absolute -right-4 -top-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#c1ff72]"
+            className="absolute -right-4 -top-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary-lime"
             data-aos="fade"
             data-aos-delay="500"
             data-aos-duration="1200"
@@ -55,13 +59,13 @@ export const HeroSection = () => {
             <div className="h-8 w-8 rounded-full bg-white"></div>
           </div>
           <div
-            className="absolute -bottom-4 -left-4 flex h-16 w-16 items-center justify-center rounded-full bg-white border border-[#c1ff72]"
+            className="absolute -bottom-4 -left-4 flex h-16 w-16 items-center justify-center rounded-full bg-white border border-primbg-primary-lime"
             data-aos="fade"
             data-aos-delay="600"
             data-aos-duration="1200"
             data-aos-easing="ease-in-out"
           >
-            <div className="h-8 w-8 rounded-full bg-[#c1ff72]"></div>
+            <div className="h-8 w-8 rounded-full bg-primary-lime"></div>
           </div>
         </div>
       </div>

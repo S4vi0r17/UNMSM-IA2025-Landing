@@ -1,4 +1,3 @@
-import { Navbar } from '@/components/Navbar';
 import {
   AboutSection,
   CTASection,
@@ -7,6 +6,7 @@ import {
   ProgramSection,
   TeacherSection,
 } from '@/sections';
+import { Navbar } from '@/components/Navbar';
 
 export default function Home() {
   return (
