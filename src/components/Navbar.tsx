@@ -147,7 +147,7 @@ export const Navbar = () => {
         </nav>
         <div className="flex items-center gap-2">
           <div className="text-gray-600 dark:text-gray-100">Visitantes:</div>
-          <div className="rounded-full bg-primary-lime px-4 py-2 font-medium text-white">
+          <div className="rounded-full bg-primary-lime px-4 py-2 font-medium dark:text-white">
             {visitorCount.toLocaleString()}
           </div>
         </div>
