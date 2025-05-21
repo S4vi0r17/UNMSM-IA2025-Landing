@@ -20,15 +20,15 @@ export const WeekCard = ({
   groupLink = '#',
 }: WeekCardProps) => {
   const variants = {
-    light: 'bg-gray-50 text-black border-gray-200',
-    dark: 'bg-gray-800 text-white border-gray-200',
-    green: 'bg-primary-lime-light text-black border-gray-200',
+    light: 'bg-gray-50 text-black border-gray-200 dark:text-gray-900',
+    dark: 'bg-gray-800 text-white border-gray-200 dark:text-gray-100 dark:border-gray-700',
+    green: 'bg-primary-lime-light text-black border-gray-200 dark:text-gray-900',
     white: 'bg-white text-black border-gray-200',
   };
 
   const badgeVariants = {
-    light: 'bg-primary-lime text-black',
-    dark: 'bg-primary-lime text-black',
+    light: 'bg-primary-lime text-black dark:text-white',
+    dark: 'bg-primary-lime text-black dark:text-white',
     green: 'bg-black text-white',
     white: 'bg-black text-white',
   };
@@ -36,15 +36,15 @@ export const WeekCard = ({
   const buttonVariants = {
     light: 'bg-black text-white hover:bg-gray-800',
     dark: 'bg-white text-black hover:bg-gray-200',
-    green: 'bg-black text-white hover:bg-gray-800',
-    white: 'bg-black text-white hover:bg-gray-800',
+    green: 'bg-black text-white hover:bg-gray-800 dark:hover:bg-gray-200',
+    white: 'bg-black text-white hover:bg-gray-800 dark:hover:bg-gray-200',
   };
 
   const descriptionVariants = {
     light: 'text-gray-600',
     dark: 'text-gray-300',
     green: 'text-gray-700',
-    white: 'text-gray-600',
+    white: 'text-gray-600 dark:text-gray-400',
   };
 
   return (

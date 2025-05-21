@@ -1,10 +1,28 @@
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:is(.dark *)); shadcn */
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-lime: #c1ff72;
+  --primary-lime-light: #d8ffaa;
+  --primary-lime-dark: #acf054;
+
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.dark {
+  --background: #171717;
+  --foreground: #ffffff;
+  --primary-lime: #d0ff70;
+  --primary-lime-light: #d8ffaa;
+  --primary-lime-dark: #acf054;
+
+  --black: #f5f5f5;
+  --white: #121212;
 }
 
 html {
@@ -19,16 +37,12 @@ html {
   --font-halant: var(--font-halant);
   --font-padauk: var(--font-padauk);
 
-  --color-primary-lime: #c1ff72;
-  --color-primary-lime-light: #d8ffaa;
-  --color-primary-lime-dark: #acf054;
-}
+  --color-primary-lime: var(--primary-lime);
+  --color-primary-lime-light: var(--primary-lime-light);
+  --color-primary-lime-dark: var(--primary-lime-dark);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-black: var(--black);
+  --color-white: var(--white);
 }
 
 body {

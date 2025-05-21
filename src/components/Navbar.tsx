@@ -78,7 +78,7 @@ export const Navbar = () => {
     }
   };
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm w-full lg:px-20 xl:px-70">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-600 shadow-sm w-full lg:px-20 xl:px-70">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href={'/'} className="flex items-center">
           <Image
@@ -94,7 +94,7 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'hero')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'hero'
-                ? 'bg-primary-lime'
+                ? 'bg-primary-lime dark:text-white'
                 : 'hover:bg-primary-lime/50'
             }`}
           >
@@ -105,7 +105,7 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'sobre')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'sobre'
-                ? 'bg-primary-lime'
+                ? 'bg-primary-lime dark:text-white'
                 : 'hover:bg-primary-lime/50'
             }`}
           >
@@ -116,7 +116,7 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'programa')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'programa'
-                ? 'bg-primary-lime'
+                ? 'bg-primary-lime dark:text-white'
                 : 'hover:bg-primary-lime/50'
             }`}
           >
@@ -127,7 +127,7 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'docente')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'docente'
-                ? 'bg-primary-lime'
+                ? 'bg-primary-lime dark:text-white'
                 : 'hover:bg-primary-lime/50'
             }`}
           >
@@ -138,7 +138,7 @@ export const Navbar = () => {
             onClick={(e) => scrollToSection(e, 'contacto')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'contacto'
-                ? 'bg-primary-lime'
+                ? 'bg-primary-lime dark:text-white'
                 : 'hover:bg-primary-lime/50'
             }`}
           >
@@ -146,8 +146,8 @@ export const Navbar = () => {
           </Link> */}
         </nav>
         <div className="flex items-center gap-2">
-          <div className="text-gray-600">Visitantes:</div>
-          <div className="rounded-full bg-primary-lime px-4 py-2 font-medium">
+          <div className="text-gray-600 dark:text-gray-100">Visitantes:</div>
+          <div className="rounded-full bg-primary-lime px-4 py-2 font-medium text-white">
             {visitorCount.toLocaleString()}
           </div>
         </div>

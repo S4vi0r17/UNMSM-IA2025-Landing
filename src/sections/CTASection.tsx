@@ -13,7 +13,7 @@ export const CTASection = () => {
         data-aos-delay="100"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-halant font-semibold text-black">
+          <h2 className="text-4xl font-halant font-semibold text-black dark:text-white">
             Conoce a tu Grupo de Trabajo
           </h2>
           <p className="mt-4 text-gray-700 text-lg">
@@ -26,7 +26,7 @@ export const CTASection = () => {
               href="https://docs.google.com/spreadsheets/d/1NzHW1RoytIM2Jzhz6YZdyVffpY3kcYYvDvgebaV7clM/edit?gid=0#gid=0"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 font-medium text-white hover:bg-gray-800 transition-all hover:-translate-y-0.5 shadow-md"
+              className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 font-medium text-white hover:bg-gray-800 dark:hover:bg-gray-200 transition-all hover:-translate-y-0.5 shadow-md"
             >
               Ver Grupos de Trabajo
               <ChevronRight className="h-4 w-4" />

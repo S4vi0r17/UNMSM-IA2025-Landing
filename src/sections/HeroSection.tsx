@@ -10,13 +10,13 @@ export const HeroSection = () => {
     >
       <div className="flex flex-col justify-center space-y-6 text-center lg:text-left lg:pl-16 xl:pl-0">
         <h1
-          className="text-4xl sm:text-5xl font-montserrat font-bold leading-tight bg-gradient-to-r from-gray-500 via-[#83c53c] to-primary-lime bg-clip-text text-transparent"
+          className="text-4xl sm:text-5xl font-montserrat font-bold leading-tight bg-gradient-to-r from-gray-500 dark:from-gray-100 via-[#83c53c] dark:via-[#a1d866] to-primary-lime bg-clip-text text-transparent"
           data-aos="fade-up"
         >
           Inteligencia Artificial
         </h1>
         <p
-          className="text-gray-600 text-lg"
+          className="text-gray-600 dark:text-gray-100 text-lg"
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -27,7 +27,7 @@ export const HeroSection = () => {
         <div data-aos="fade-up" data-aos-delay="200">
           <Link
             href="#sobre"
-            className="inline-flex items-center gap-2 rounded-full bg-primary-lime px-6 py-3 font-medium text-black hover:bg-primary-lime/80 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-primary-lime px-6 py-3 font-medium text-black hover:bg-primary-lime/80 transition-colors dark:text-white"
           >
             Ver Información Completa
             <ChevronRight className="h-4 w-4" />
@@ -59,7 +59,7 @@ export const HeroSection = () => {
             <div className="h-8 w-8 rounded-full bg-white"></div>
           </div>
           <div
-            className="absolute -bottom-4 -left-4 flex h-16 w-16 items-center justify-center rounded-full bg-white border border-primbg-primary-lime"
+            className="absolute -bottom-4 -left-4 flex h-16 w-16 items-center justify-center rounded-full bg-white border border-primary-lime"
             data-aos="fade"
             data-aos-delay="600"
             data-aos-duration="1200"
