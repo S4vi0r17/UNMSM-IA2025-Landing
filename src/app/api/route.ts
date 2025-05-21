@@ -9,11 +9,11 @@ const redis = new Redis({
 
 export async function GET() {
   try {
-    // // Incrementar el contador usando Upstash Redis
-    // const counter = await redis.incr('visitCounter');
+    // Incrementar el contador usando Upstash Redis
+    const counter = await redis.incr('visitCounter');
 
-    // // Devolver el valor actual
-    // return NextResponse.json({ count: counter });
+    // Devolver el valor actual
+    return NextResponse.json({ count: counter });
   } catch (error) {
     console.error('Error al manejar el contador:', error);
     return NextResponse.json(
