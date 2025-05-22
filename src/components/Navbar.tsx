@@ -1,62 +1,9 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-function useActiveSection() {
-  const [activeSection, setActiveSection] = useState('');
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { rootMargin: '-20% 0px -80% 0px' }
-    );
-
-    const sections = document.querySelectorAll('section[id]');
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
-
-  return activeSection;
-}
-
-function useVisitorCount() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const fetchVisitorCount = async () => {
-      try {
-        const response = await fetch('/api', {
-          next: { revalidate: 259200 }, // Revalidate every 3 days
-        });
-        const data = await response.json();
-        setCount(data.count);
-      } catch (error) {
-        console.error('Error fetching visitor count:', error);
-        // Fallback to random count if API fails
-        setCount(Math.floor(Math.random() * 900) + 1100);
-      }
-    };
-
-    fetchVisitorCount();
-  }, []);
-
-  return count;
-}
+import { useActiveSection } from '@/hooks/useActiveSection';
+import { useVisitorCount } from '@/hooks/useVisitorCount';
 
 export const Navbar = () => {
   const activeSection = useActiveSection();
@@ -77,6 +24,7 @@ export const Navbar = () => {
       });
     }
   };
+
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-600 shadow-sm w-full lg:px-20 xl:px-70">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">

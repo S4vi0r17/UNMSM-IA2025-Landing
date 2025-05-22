@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { HeroButton } from '@/components/HeroButton';
 
 export const HeroSection = () => {
   return (
@@ -24,15 +23,7 @@ export const HeroSection = () => {
           diseñar, implementar y evaluar soluciones inteligentes en distintos
           ámbitos.
         </p>
-        <div data-aos="fade-up" data-aos-delay="200">
-          <Link
-            href="#sobre"
-            className="inline-flex items-center gap-2 rounded-full bg-primary-lime px-6 py-3 font-medium text-black hover:bg-primary-lime/80 transition-colors dark:text-white"
-          >
-            Ver Información Completa
-            <ChevronRight className="h-4 w-4" />
-          </Link>
-        </div>
+        <HeroButton />
       </div>
       <div
         className="relative flex items-center justify-center"
