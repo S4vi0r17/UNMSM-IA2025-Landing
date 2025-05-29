@@ -111,7 +111,7 @@ export const programData: UnitData[] = [
         variant: 'white',
         hasGroup: true,
         groupNumber: 2,
-        groupLink: 'https://www.google.com/',
+        groupLink: 'https://whimsical-mooncake-f0edd8.netlify.app/',
       },
       {
         weekNumber: 10,
