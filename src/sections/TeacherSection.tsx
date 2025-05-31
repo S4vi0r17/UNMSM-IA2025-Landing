@@ -6,7 +6,7 @@ export const TeacherSection = () => {
   return (
     <section
       id="docente"
-      className="bg-gray-50 dark:bg-slate-600 py-16 pt-24"
+      className="bg-gray-50 dark:bg-[#1e2939] py-16 pt-24"
       data-aos="fade-up"
     >
       <div className="container max-w-[1150px] mx-auto px-4">
@@ -45,9 +45,7 @@ export const TeacherSection = () => {
             <div className="mt-4 space-y-3 ml-5 text-lg">
               <div className="flex items-center justify-center md:justify-start gap-2 text-gray-600 dark:text-gray-100">
                 <Mail className="h-5 w-5 text-primary-lime" />
-                <p className="font-medium">
-                  lguerrag1@unmsm.edu.pe
-                </p>
+                <p className="font-medium">lguerrag1@unmsm.edu.pe</p>
               </div>
               <div className="flex items-center justify-center md:justify-start gap-2">
                 <Calendar className="h-5 w-5 text-primary-lime" />
@@ -66,7 +64,7 @@ export const TeacherSection = () => {
             <div className="mt-8 flex justify-center md:justify-start">
               <Link
                 href="mailto:lguerrag1@unmsm.edu.pe"
-                className="inline-flex items-center gap-2 rounded-full bg-primary-lime text-black dark:text-white px-5 py-2.5 font-medium shadow hover:bg-primary-lime-dark transition-all hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 rounded-full bg-primary-lime text-black dark:text-white px-5 py-2.5 font-medium shadow hover:bg-primary-lime-dark transition-all duration-200 hover:-translate-y-0.5"
               >
                 <Mail className="h-5 w-5" />
                 Contactar por correo

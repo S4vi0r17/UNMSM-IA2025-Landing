@@ -26,7 +26,7 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-600 shadow-sm w-full lg:px-20 xl:px-70">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-600 duration-500 shadow-sm w-full lg:px-20 xl:px-70">
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href={'/'} className="flex items-center">
           <Image

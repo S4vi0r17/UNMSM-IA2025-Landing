@@ -23,7 +23,7 @@ export default function ThemeToggle() {
   return (
     <button
       aria-label="Toggle Dark Mode"
-      className="fixed bottom-6 right-6 z-50 rounded-full bg-white dark:bg-black shadow-lg dark:shadow-yellow-300 p-3 transition-colors duration-300 hover:bg-gray-100 dark:hover:bg-black/90 focus:outline-none cursor-pointer"
+      className="fixed bottom-6 right-6 z-50 rounded-full bg-white shadow-lg shadow-blue-900 dark:shadow-yellow-300 dark:bg-[#121212] p-3 transition-all duration-300 hover:bg-gray-100 dark:hover:bg-[#1b1b1b] active:scale-90 focus:outline-none cursor-pointer"
       onClick={handleToggle}
     >
       <span
@@ -53,7 +53,7 @@ export default function ThemeToggle() {
         ) : (
           // Moon icon
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-gray-200"
+            className="w-6 h-6 text-blue-900 dark:text-gray-200"
             fill="none"
             stroke="currentColor"
             strokeWidth={2}

@@ -26,7 +26,7 @@ export const CTASection = () => {
               href="https://docs.google.com/spreadsheets/d/1NzHW1RoytIM2Jzhz6YZdyVffpY3kcYYvDvgebaV7clM/edit?gid=0#gid=0"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 font-medium text-white hover:bg-gray-800 dark:hover:bg-gray-200 transition-all hover:-translate-y-0.5 shadow-md"
+              className="inline-flex items-center gap-2 rounded-full bg-black px-6 py-3 font-medium text-white hover:bg-gray-800 dark:hover:bg-gray-200 duration-200 hover:-translate-y-0.5 shadow-md"
             >
               Ver Grupos de Trabajo
               <ChevronRight className="h-4 w-4" />
