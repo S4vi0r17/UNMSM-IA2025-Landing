@@ -147,7 +147,7 @@ export const programData: UnitData[] = [
         variant: 'green',
         hasGroup: true,
         groupNumber: 1,
-        groupLink: 'https://www.google.com/',
+        groupLink: 'https://studio-black-ten.vercel.app/',
       },
       {
         weekNumber: 13,
