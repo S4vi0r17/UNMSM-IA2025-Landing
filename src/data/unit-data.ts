@@ -121,7 +121,7 @@ export const programData: UnitData[] = [
         variant: 'white',
         hasGroup: true,
         groupNumber: 3,
-        groupLink: '',
+        groupLink: 'https://grupo3inteligenciaartificial2025.wordpress.com/',
       },
       {
         weekNumber: 11,
