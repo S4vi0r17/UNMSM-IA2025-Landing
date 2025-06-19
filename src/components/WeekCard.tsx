@@ -59,7 +59,7 @@ export const WeekCard = ({
       <div className="mt-6">
         <h4 className="font-bold text-lg">{title}</h4>
         <p className={`mt-2 ${descriptionVariants[variant]}`}>{description}</p>
-        {hasGroup && (
+        {hasGroup && groupLink !== '' && (
           <a
             href={groupLink}
             target="_blank"
