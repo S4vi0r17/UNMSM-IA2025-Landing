@@ -131,7 +131,7 @@ export const programData: UnitData[] = [
         variant: 'white',
         hasGroup: true,
         groupNumber: 5,
-        groupLink: '',
+        groupLink: 'https://proyecto-ia-rnn-2c7q.vercel.app/',
       },
     ],
     columns: 3,
