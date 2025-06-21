@@ -82,7 +82,7 @@ export const programData: UnitData[] = [
         variant: 'green',
         hasGroup: true,
         groupNumber: 7,
-        groupLink: 'https://gabplus2802.github.io/aprendizaje-por-refuerzo-grupo07/',
+        groupLink: 'https://gabplus2802.github.io/ia-pagina-web-grupo07/',
       },
     ],
     columns: 3,
