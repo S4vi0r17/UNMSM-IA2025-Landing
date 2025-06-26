@@ -165,7 +165,9 @@ export const programData: UnitData[] = [
         description:
           'Conceptos y aplicaciones en arte, música, narrativa; consideraciones legales y éticas.',
         variant: 'green',
-        hasGroup: false,
+        hasGroup: true,
+        groupNumber: 9,
+        groupLink: 'https://iagrupo9.wordpress.com/',
       },
     ],
     columns: 3,
