@@ -157,7 +157,7 @@ export const programData: UnitData[] = [
         variant: 'green',
         hasGroup: true,
         groupNumber: 8,
-        groupLink: '',
+        groupLink: 'https://gan-g8.vercel.app/',
       },
       {
         weekNumber: 14,
