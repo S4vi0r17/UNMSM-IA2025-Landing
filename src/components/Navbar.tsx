@@ -11,7 +11,7 @@ export const Navbar = () => {
 
   const scrollToSection = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    sectionId: string
+    sectionId: string,
   ) => {
     e.preventDefault();
     const section = document.getElementById(sectionId);
@@ -26,19 +26,21 @@ export const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-600 duration-500 shadow-sm w-full lg:px-20 xl:px-70">
-      <div className="container mx-auto flex h-20 items-center justify-between px-4">
-        <Link href={'/'} className="flex items-center">
+    <header className='sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 dark:border-gray-600 duration-500 shadow-sm w-full lg:px-20 xl:px-70'>
+      <div className='container mx-auto flex h-20 items-center justify-between px-4'>
+        <Link href={'/'} className='flex items-center'>
           <Image
-            src="https://eventosindustrial.unmsm.edu.pe/cirsos/img/logo_unmsm.png"
-            alt="UNMSM Logo"
+            src={'/logo_unmsm.png'}
+            priority
+            alt='UNMSM Logo'
             width={160}
             height={80}
+            style={{ width: 'auto', height: 'auto' }}
           />
         </Link>
-        <nav className="hidden md:flex md items-center gap-4 lg:gap-8">
+        <nav className='hidden md:flex md items-center gap-4 lg:gap-8'>
           <Link
-            href="#"
+            href='#'
             onClick={(e) => scrollToSection(e, 'hero')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'hero'
@@ -49,7 +51,7 @@ export const Navbar = () => {
             Inicio
           </Link>
           <Link
-            href="#sobre"
+            href='#sobre'
             onClick={(e) => scrollToSection(e, 'sobre')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'sobre'
@@ -60,7 +62,7 @@ export const Navbar = () => {
             Sobre el Curso
           </Link>
           <Link
-            href="#programa"
+            href='#programa'
             onClick={(e) => scrollToSection(e, 'programa')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'programa'
@@ -71,7 +73,7 @@ export const Navbar = () => {
             Programa
           </Link>
           <Link
-            href="#docente"
+            href='#docente'
             onClick={(e) => scrollToSection(e, 'docente')}
             className={`transition-colors px-3 py-1 rounded-full ${
               activeSection === 'docente'
@@ -93,9 +95,9 @@ export const Navbar = () => {
             Contacto
           </Link> */}
         </nav>
-        <div className="flex items-center gap-2">
-          <div className="text-gray-600 dark:text-gray-100">Visitantes:</div>
-          <div className="rounded-full bg-primary-lime px-4 py-2 font-medium dark:text-white">
+        <div className='flex items-center gap-2'>
+          <div className='text-gray-600 dark:text-gray-100'>Visitantes:</div>
+          <div className='rounded-full bg-primary-lime px-4 py-2 font-medium dark:text-white'>
             {visitorCount.toLocaleString()}
           </div>
         </div>

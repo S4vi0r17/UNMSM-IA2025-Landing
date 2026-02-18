@@ -6,10 +6,6 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'eventosindustrial.unmsm.edu.pe',
-      },
-      {
-        protocol: 'https',
         hostname: 'i.ibb.co',
       },
     ],
