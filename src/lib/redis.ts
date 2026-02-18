@@ -17,6 +17,7 @@ const getRedisClient = () => {
 
 // Singleton para evitar múltiples conexiones en desarrollo (hot reload)
 declare global {
+  // eslint-disable-next-line no-var
   var redis: Redis | undefined;
 }
 
