@@ -1,4 +1,4 @@
-# UNMSM IA 2025 - Landing Page
+# UNMSM IA 2026 - Landing Page
 
 ![Mockup Preview](./public/mockup.png)
 
@@ -7,7 +7,7 @@
 
 ## 🌐 Vista previa
 
-[https://unmsm-ia-2025-landing.vercel.app/](https://unmsm-ia-2025-landing.vercel.app/)
+[https://ia-landing.s4vi0r.tech/](https://ia-landing.s4vi0r.tech/)
 
 ---
 
@@ -74,10 +74,10 @@ Landing page para el curso de **Inteligencia Artificial** de la Universidad Naci
 
 ## 📦 Scripts útiles
 
-- `bun run dev` / `npm run dev` — Desarrollo
-- `bun run build` / `npm run build` — Build de producción
-- `bun run start` / `npm run start` — Servidor de producción
-- `bun run lint` / `npm run lint` — Linter
+- `bun run dev` — Desarrollo
+- `bun run build` — Build de producción
+- `bun run start` — Servidor de producción
+- `bun run lint` — Linter
 
 ## 👨‍🎓 Créditos
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat, Halant, Padauk } from 'next/font/google';
 import AOSProvider from '@/components/AOSProvider';
 import { ThemeProvider } from '@/components/theme-provider';
+import { JsonLd } from '@/components/JsonLd';
 
 import './globals.css';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -24,9 +25,13 @@ const padauk = Padauk({
 });
 
 export const metadata: Metadata = {
-  title: 'Curso de IA | UNMSM',
+  metadataBase: new URL('https://ia-landing.s4vi0r.tech/'),
+  title: {
+    default: 'Curso de Inteligencia Artificial | UNMSM 2026',
+    template: '%s | Curso IA UNMSM',
+  },
   description:
-    'Curso de Inteligencia Artificial para estudiantes de la Universidad Nacional Mayor de San Marcos. Aprende fundamentos teóricos y prácticos para diseñar, implementar y evaluar soluciones inteligentes.',
+    'Curso de Inteligencia Artificial para estudiantes de la Universidad Nacional Mayor de San Marcos. Aprende fundamentos teóricos y prácticos de Machine Learning, Deep Learning e IA Generativa para diseñar, implementar y evaluar soluciones inteligentes.',
   authors: [{ name: 'Eder Gustavo Benites Pardave' }],
   keywords: [
     'inteligencia artificial',
@@ -35,38 +40,85 @@ export const metadata: Metadata = {
     'deep learning',
     'IA generativa',
     'UNMSM',
-    'universidad',
+    'universidad nacional mayor de san marcos',
     'curso',
+    'San Marcos',
+    'aprendizaje automático',
+    'redes neuronales',
+    'ciencia de datos',
+    'Python',
+    'curso IA Perú',
+    'agentes inteligentes',
+    'CNN',
+    'RNN',
+    'LSTM',
+    'transformers',
+    'GPT',
+    'GANs',
+    'búsqueda informada',
+    'aprendizaje por refuerzo',
+    'redes neuronales convolucionales',
+    'Lima',
   ],
   openGraph: {
     type: 'website',
-    url: 'https://unmsm-ia-2025-landing.vercel.app/',
-    title: 'Curso de Inteligencia Artificial | UNMSM',
+    locale: 'es_PE',
+    url: 'https://ia-landing.s4vi0r.tech/',
+    siteName: 'Curso de IA - UNMSM',
+    title: 'Curso de Inteligencia Artificial | UNMSM 2026',
     description:
       'Descubre los fundamentos teóricos y prácticos que te prepararán para diseñar, implementar y evaluar soluciones inteligentes en distintos ámbitos.',
-    images: ['/guerrabarrasv2.png'],
+    images: [
+      {
+        url: '/guerrabarrasv2.png',
+        width: 1200,
+        height: 630,
+        alt: 'Curso de Inteligencia Artificial - Universidad Nacional Mayor de San Marcos',
+        type: 'image/png',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Curso de Inteligencia Artificial | UNMSM',
+    title: 'Curso de Inteligencia Artificial | UNMSM 2026',
     description:
       'Curso completo de IA: desde fundamentos básicos hasta técnicas avanzadas de Deep Learning e IA Generativa.',
-    images: ['/guerrabarrasv2.png'],
+    images: [
+      {
+        url: '/guerrabarrasv2.png',
+        alt: 'Curso de Inteligencia Artificial - UNMSM',
+      },
+    ],
   },
   icons: {
     icon: '/logounmsm.svg',
     apple: '/logounmsm.svg',
   },
   alternates: {
-    canonical: 'https://unmsm-ia-2025-landing.vercel.app/',
+    canonical: 'https://ia-landing.s4vi0r.tech/',
+    languages: {
+      'es-PE': 'https://ia-landing.s4vi0r.tech/',
+    },
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   creator: 'Eder Gustavo Benites Pardave',
   publisher: 'Universidad Nacional Mayor de San Marcos',
-  metadataBase: new URL('https://unmsm-ia-2025-landing.vercel.app/'),
+  category: 'education',
+  verification: {
+    // Agrega tus códigos de verificación aquí cuando los tengas
+    // google: 'tu-código-de-verificación-google',
+    // yandex: 'tu-código-de-verificación-yandex',
+  },
 };
 
 export default function RootLayout({
@@ -75,10 +127,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="custom-scrollbar" suppressHydrationWarning>
+    <html lang="es" className="custom-scrollbar" suppressHydrationWarning>
       <body
         className={`${montserrat.variable} ${halant.variable} ${padauk.variable} antialiased`}
       >
+        <JsonLd />
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
